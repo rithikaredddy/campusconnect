@@ -1,73 +1,196 @@
-# Welcome to your Lovable project
+🎓 CampusConnect
+A Modern Web-Based Campus Event Management Platform
 
-## Project info
+CampusConnect is a full-stack web application designed to simplify event discovery, registration, and student engagement across college campuses.
+It provides a clean, fast, responsive UI where users can browse events, register instantly, and track their participation through a personal dashboard.
 
-**URL**: https://lovable.dev/projects/b7e9a38c-322a-4d20-9c0d-bdea234217ff
+🚀 Features
+🌐 Frontend
 
-## How can I edit this code?
+✨ Clean & modern UI with React.js
 
-There are several ways of editing your application.
+🎛️ Interactive event cards
 
-**Use Lovable**
+🔍 Search & category filters
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b7e9a38c-322a-4d20-9c0d-bdea234217ff) and start prompting.
+📅 Event details & registration view
 
-Changes made via Lovable will be committed automatically to this repo.
+👤 User authentication (Login / Signup)
 
-**Use your preferred IDE**
+📊 Personal dashboard showing:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Registered events
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Upcoming events
 
-Follow these steps:
+User department & year
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🖥️ Backend
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🧩 Node.js + Express REST API
 
-# Step 3: Install the necessary dependencies.
-npm i
+🗄️ MongoDB database integration
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🔐 Secure user login & registration
 
-**Edit a file directly in GitHub**
+📝 API routes for events & registrations
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📤 Returns formatted JSON responses
 
-**Use GitHub Codespaces**
+🏗 Architecture Overview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+CampusConnect follows a Client–Server architecture:
 
-## What technologies are used for this project?
+Frontend (Client Layer)
 
-This project is built with:
+React components for UI rendering
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Axios/fetch for API communication
 
-## How can I deploy this project?
+Route navigation for pages (Home, Events, Dashboard, Login, Signup)
 
-Simply open [Lovable](https://lovable.dev/projects/b7e9a38c-322a-4d20-9c0d-bdea234217ff) and click on Share -> Publish.
+Backend (Application Layer)
 
-## Can I connect a custom domain to my Lovable project?
+Express API
 
-Yes, you can!
+EventService for business logic (event list, registrations)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Routes:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+GET /api/events
+
+POST /api/register
+
+Database (Persistence Layer)
+
+MongoDB (events, users, registrations)
+
+External Services
+
+Optional: Email/SMS notifications
+
+Optional: Storage of event files/images
+
+📂 Project Folder Structure
+CampusConnect/
+│
+├── frontend/             # React client
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── App.js
+│       └── index.js
+│
+├── backend/              # Node.js API server
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── config/
+│
+├── package.json
+├── README.md
+└── .gitignore
+
+⚙️ Technologies & Tools Used
+Frontend
+
+React.js ⚛️
+
+HTML5
+
+CSS3
+
+Axios for API calls
+
+React Hooks
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB / Mongoose
+
+JSON Web Token (JWT) – optional
+
+bcrypt for password hashing
+
+Dev Tools
+
+Git & GitHub
+
+VS Code
+
+npm (Node package manager)
+
+▶️ How to Run the Project Locally
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/CampusConnect.git
+cd CampusConnect
+
+2️⃣ Install Backend Dependencies
+cd backend
+npm install
+npm start
+
+3️⃣ Install Frontend Dependencies
+cd ../frontend
+npm install
+npm start
+
+4️⃣ Open in Browser
+http://localhost:8080   → React frontend  
+http://localhost:4000   → Node backend  
+
+📸 Screenshots (Suggested for Documentation)
+
+(Use these headings when adding images to your report)
+
+Fig 1.1: Landing Page of CampusConnect
+
+Fig 1.2: Upcoming Events Page
+
+Fig 1.3: User Dashboard
+
+Fig 1.4: Login Screen
+
+Fig 1.5: Signup Screen
+
+Fig 1.6: Event Registration Confirmation
+
+🧪 Testing
+
+Manual Testing Performed On:
+
+UI navigation
+
+Event search
+
+Filtering
+
+User login/signup
+
+API response validation
+
+Database insertions
+
+📦 Deployment
+
+CampusConnect can be deployed on:
+
+GitHub Pages (Frontend)
+
+Render / Railway (Backend)
+
+MongoDB Atlas (Database)
+
+👥 Contributors
+
+Anumandla Rithika – Developer & UI Designer
+
+📄 License
+
+This project is for academic and demonstration purposes.
