@@ -71,30 +71,6 @@ Optional: Email/SMS notifications
 
 Optional: Storage of event files/images
 
-📂 Project Folder Structure
-CampusConnect/
-│
-├── frontend/                     # React Client
-│   ├── public/
-│   │    └── index.html
-│   │
-│   └── src/
-│        ├── components/          # UI Components (Navbar, Cards, Forms)
-│        ├── pages/               # Page-level components (Home, Events, Login)
-│        ├── App.js
-│        └── index.js
-│
-├── backend/                      # Node.js API Server
-│   ├── controllers/              # Event & User controllers
-│   ├── models/                   # MongoDB schemas
-│   ├── routes/                   # API Routes
-│   ├── config/                   # DB connection, environment setup
-│   └── server.js                 # Main server file
-│
-├── package.json                  # Project metadata & dependencies
-└── README.md
-
-
 ⚙️ Technologies & Tools Used
 Frontend
 
